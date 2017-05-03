@@ -14,6 +14,8 @@
 		9132E1201EB6CFB3001A4A87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9132E11E1EB6CFB3001A4A87 /* LaunchScreen.storyboard */; };
 		9132E12B1EB6CFB3001A4A87 /* Meu_DinheiroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9132E12A1EB6CFB3001A4A87 /* Meu_DinheiroTests.swift */; };
 		9132E1361EB6CFB3001A4A87 /* Meu_DinheiroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9132E1351EB6CFB3001A4A87 /* Meu_DinheiroUITests.swift */; };
+		919889E21EB959010010DB43 /* CategoryStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919889E11EB959010010DB43 /* CategoryStatus.swift */; };
+		919889E41EB970D90010DB43 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919889E31EB970D90010DB43 /* CategoryDetailViewController.swift */; };
 		919C0DB01EB6E38500E9C151 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C0DAF1EB6E38500E9C151 /* HomeTableViewController.swift */; };
 		919C0DB21EB6EBA600E9C151 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C0DB11EB6EBA600E9C151 /* CategoryTableViewCell.swift */; };
 		91EC5D8F1EB6D69600D864A8 /* CategoryMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EC5D8B1EB6D69600D864A8 /* CategoryMO+CoreDataClass.swift */; };
@@ -53,6 +55,8 @@
 		9132E1311EB6CFB3001A4A87 /* Meu DinheiroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meu DinheiroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9132E1351EB6CFB3001A4A87 /* Meu_DinheiroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meu_DinheiroUITests.swift; sourceTree = "<group>"; };
 		9132E1371EB6CFB3001A4A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919889E11EB959010010DB43 /* CategoryStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryStatus.swift; sourceTree = "<group>"; };
+		919889E31EB970D90010DB43 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		919C0DAF1EB6E38500E9C151 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		919C0DB11EB6EBA600E9C151 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		91EC5D8B1EB6D69600D864A8 /* CategoryMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CategoryMO+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			children = (
 				9132E1211EB6CFB3001A4A87 /* Info.plist */,
 				9132E11C1EB6CFB3001A4A87 /* Assets.xcassets */,
+				919889E11EB959010010DB43 /* CategoryStatus.swift */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				919C0DAF1EB6E38500E9C151 /* HomeTableViewController.swift */,
+				919889E31EB970D90010DB43 /* CategoryDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91EC5D901EB6D69600D864A8 /* CategoryMO+CoreDataProperties.swift in Sources */,
+				919889E21EB959010010DB43 /* CategoryStatus.swift in Sources */,
 				9132E11B1EB6CFB3001A4A87 /* Meu_Dinheiro.xcdatamodeld in Sources */,
 				91EC5D911EB6D69600D864A8 /* ExpenseMO+CoreDataClass.swift in Sources */,
 				9132E1131EB6CFB3001A4A87 /* AppDelegate.swift in Sources */,
@@ -320,6 +327,7 @@
 				91EC5D921EB6D69600D864A8 /* ExpenseMO+CoreDataProperties.swift in Sources */,
 				91EC5D8F1EB6D69600D864A8 /* CategoryMO+CoreDataClass.swift in Sources */,
 				919C0DB21EB6EBA600E9C151 /* CategoryTableViewCell.swift in Sources */,
+				919889E41EB970D90010DB43 /* CategoryDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

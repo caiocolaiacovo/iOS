@@ -2,7 +2,7 @@
 //  CategoryMO+CoreDataProperties.swift
 //  Meu Dinheiro
 //
-//  Created by Caio Colaiacovo on 30/04/17.
+//  Created by Caio Colaiacovo on 02/05/17.
 //  Copyright © 2017 Caio Colaiacovo. All rights reserved.
 //
 
@@ -18,12 +18,11 @@ extension CategoryMO {
 
     @NSManaged public var icon: String?
     @NSManaged public var month: Int16
-    @NSManaged public var name: String?
+    @NSManaged public var title: String?
     @NSManaged public var reservedValue: NSDecimalNumber?
     @NSManaged public var spentValue: NSDecimalNumber?
     @NSManaged public var status: Int32
     @NSManaged public var year: Int16
-    @NSManaged public var newProperty: String?
     @NSManaged public var expenses: NSSet?
 
 }
