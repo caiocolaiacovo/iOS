@@ -3,7 +3,7 @@
     <entity name="Category" representedClassName="CategoryMO" syncable="YES">
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="month" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="reservedValue" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="reservedValue" attributeType="Decimal" syncable="YES"/>
         <attribute name="spentValue" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="status" attributeType="Integer 32" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>

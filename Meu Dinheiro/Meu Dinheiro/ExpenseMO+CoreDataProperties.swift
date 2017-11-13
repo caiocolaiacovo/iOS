@@ -2,7 +2,7 @@
 //  ExpenseMO+CoreDataProperties.swift
 //  Meu Dinheiro
 //
-//  Created by Caio Colaiacovo on 30/04/17.
+//  Created by Caio Colaiacovo on 03/05/17.
 //  Copyright © 2017 Caio Colaiacovo. All rights reserved.
 //
 

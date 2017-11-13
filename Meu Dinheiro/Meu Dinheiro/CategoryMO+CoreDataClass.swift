@@ -13,6 +13,12 @@ import CoreData
 public class CategoryMO: NSManagedObject {
     override public func awakeFromInsert() {
         print("awakeFromInsert()")
+        
+        if self.reservedValue == 0 {
+            self.status = CategoryStatus.None.rawValue
+        } else {
+            self.status = CategoryStatus.Good.rawValue
+        }
     }
     
     override public func awakeFromFetch() {
@@ -20,24 +26,37 @@ public class CategoryMO: NSManagedObject {
         print(self)
     }
     
-    func total() -> Decimal {
-        if reservedValue == nil {
-            return spentValue! as Decimal
-        } else {
-            return (reservedValue! as Decimal) - (spentValue! as Decimal)
+    func remainingValue() -> Decimal {
+        if reservedValue == 0 {
+            return 0
         }
+        
+        return reservedValue.decimalValue - spentValue.decimalValue
     }
 
     func spentPercentage() -> Decimal {
-        if reservedValue == nil {
+        if reservedValue == 0 || spentValue == 0 {
             return 0
+        }
+        
+        let value = ((spentValue.decimalValue * 100) / reservedValue.decimalValue) / 100
+        
+        if value < 1 {
+            return value
         } else {
-            let value = (((spentValue! as Decimal) * 100) / (reservedValue! as Decimal)) / 100
-            
-            if value < 1 {
-                return value
+            return 1
+        }
+    }
+    
+    func append(expense: ExpenseMO) {
+        addToExpenses(expense)
+        self.spentValue
+        
+        if reservedValue != nil {
+            if spentValue > reservedValue! {
+                status = .Bad
             } else {
-                return 1
+                status = .Good
             }
         }
     }
